@@ -5,10 +5,10 @@ function preload(){
   bg= loadImage("images/iss.png");
   sleep = loadAnimation("images/sleep.png");
   brush = loadAnimation("images/brush.png");
-  gym = loadAnimation("images/gym1.png","images/gym1.png","images/gym2.png","images/gym2.png");
-  eat = loadAnimation("images/eat1.png","images/eat1.png","images/eat1.png","images/eat2.png","images/eat2.png","images/eat2.png");
-  bath = loadAnimation("images/bath1.png","images/bath1.png","images/bath1.png","images/bath2.png","images/bath2.png","images/bath2.png");
- move = loadAnimation("images/move1.png","images/move1.png","images/move2.png","images/move2.png");
+  gym = loadAnimation("images/gym1.png","images/gym2.png","images/gym11.png","images/gym12.png");
+  eat = loadAnimation("images/eat1.png","images/eat2.png");
+  bath = loadAnimation("images/bath1.png","images/bath2.png");
+ move = loadAnimation("images/move1.png","images/move2.png");
 }
 
 function setup() {
@@ -34,11 +34,11 @@ function draw() {
   text("Right Arrow = Bathing",20, 100);
   text("m key = Moving",20, 115);
   
+  /*edges=createEdgeSprites();
+  astronautbounce.Off(edges);*/
+
   edges=createEdgeSprites();
   astronaut.bounceOff(edges);
-
-  /*edges=createEdgeSprites();
-  astronaut.BounceOff(edges);*/
 
   /*edges=createEdgeSprites();
   astronaut.bounceOff(edges);*/
